@@ -1,0 +1,16 @@
+name: Zip Resources
+
+on: [push, pull_request]
+
+jobs:
+  zip:
+    runs-on: ubuntu-20.04
+
+    steps:
+    # Checkout the repo
+    - uses: actions/checkout@v4
+    
+    - uses: actions/upload-artifact@v4
+      with:
+        name: my-artifact
+        path: data # or path/to/artifact
