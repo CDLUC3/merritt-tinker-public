@@ -44,7 +44,6 @@ graph TD
 
 ## New Process
 
-## Current Process
 ```mermaid
 graph TD
   ProQuest
