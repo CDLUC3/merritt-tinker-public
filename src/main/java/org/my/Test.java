@@ -5,7 +5,7 @@ public class Test {
     new Test().hello();
   }
 
-  publc Test() {
+  public Test() {
   }
 
   public void hello() {
