@@ -11,10 +11,18 @@ File.open('merritt-manifest-schema.json', 'w') do |f|  f.write(
   )
 )
 end
-obj = YAML.safe_load(
-  File.read('manifest.sample.yml'), 
-  aliases: true
-)
+
 schema = JSON.parse(File.read("merritt-manifest-schema.json"))
-stat = JSON::Validator.fully_validate(schema, obj)
-puts stat
+
+Dir['./manifest*.yml'].each do |file|
+  begin
+    puts "\n\n#{file}\n\n"
+    obj = YAML.safe_load(
+      File.read(file), 
+      aliases: true
+    )
+  rescue => e 
+    puts e 
+  end
+  puts JSON::Validator.fully_validate(schema, obj)
+end
