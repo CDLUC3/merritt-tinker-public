@@ -1,0 +1,24 @@
+authentication-methods:
+  - id: default-auth
+    default: true
+    method:
+      public:
+contents:
+  objects:
+  - erc-what: Call 911 Example
+    files:
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.jpg
+      size: 87112
+      fixity:
+        algorithm: md5
+        value: 47d321056e60944a06973793c7b5841e
+      merritt-pathname: call911.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.txt
+      size: 46
+      fixity:
+        algorithm: md5
+        value: 77fe42b1055bbabe5164822823218f0a
+      merritt-pathname: call911.txt  
+
+# https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.jpg | md5 | 47d321056e60944a06973793c7b5841e | 87112 |  | call911.jpg
+# https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.txt | md5 | 77fe42b1055bbabe5164822823218f0a | 46 |  | call911.txt

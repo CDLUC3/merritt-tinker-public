@@ -33,21 +33,21 @@ contents:
       # value:
     # authentication-method-id: # if different from the default
   objects:
-  - primary-id:
-    local-id:
-    -
-    erc-who:
-    erc-what:
-    erc-when:
+  - primary-id: ark:/99999/fk4
+    local-id:  
+    - aaa
+    erc-who: "Terry Brady"
+    erc-what: "Test manifest"    
+    erc-when: "2021-09-01"
     files:
-    - url: # http:, https:, file:, s3: should be supported
-      merritt-pathname:
-      size:
-      mime:
+    - url: https://example.com/file1.jpg
+      merritt-pathname: file1.jpg
+      size: 12345
+      mime: image/jpeg
       fixity: # is this applicable for a manifest
-        algorithm:
-        value:
-      authentication-method-id: # if different from the default
+        algorithm: sha256  
+        value: 1234567890abcdef
+      # authentication-method-id: # if different from the default
   # metadata-replacement:
   # - primary-id:
     # local-id:

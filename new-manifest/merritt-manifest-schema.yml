@@ -189,7 +189,7 @@ properties:
           type: array
           items: 
             type: object
-            oneOf:
+            anyOf:
             - required:
               - primary-id
             - required:

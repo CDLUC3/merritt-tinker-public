@@ -1,0 +1,22 @@
+authentication-methods:
+  - id: default-auth
+    default: true
+    method:
+      public:
+contents:
+  objects:
+  - erc-what: Big Hunt Example
+    files:
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt2.jpg
+      size: 76935
+      merritt-pathname: bigHunt2.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt3.jpg
+      size: 55408
+      merritt-pathname: bigHunt3.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt.txt
+      size: 33
+      merritt-pathname: bigHunt.txt 
+
+# https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt2.jpg |  |  | 76935 |  | bigHunt2.jpg
+# https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt3.jpg |  |  | 55408 |  | bigHunt3.jpg
+# https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt.txt |  |  | 33 |  | bigHunt.txt
