@@ -7,7 +7,7 @@ contents:
   objects:
   - erc-who: Tracy Seneca
     erc-what: Golden Dragon Restaurant Sign
-    erc-when: 2009-09-01
+    erc-when: '2009-09-01'
     files:
     - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/goldenDragon.jpg
       fixity:

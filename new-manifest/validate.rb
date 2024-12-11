@@ -19,6 +19,7 @@ Dir['./manifest*.yml'].each do |file|
     puts "\n\n#{file}\n\n"
     obj = YAML.safe_load(
       File.read(file), 
+      # [Date, Time],
       aliases: true
     )
   rescue => e 

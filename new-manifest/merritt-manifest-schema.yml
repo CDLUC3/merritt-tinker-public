@@ -29,7 +29,7 @@ properties:
             additionalProperties: false
             properties:
               public:
-                type: 'null'
+                type: null
           - type: object
             required:
             - basic
