@@ -6,15 +6,15 @@
   - [Yaml to Json converter and validator](validate.rb)
 
 ## Sample Manfitests
-- [4 blocks](manifest4blocks.yml)
+- [manifest4blocks.yml](manifest4blocks.yml)
   - https://github.com/CDLUC3/mrt-doc/blob/main/sampleFiles/4blocks.checkm
-- [big hunt](manifest.bigHunt.yml)
+- [manifest.bigHunt.yml](manifest.bigHunt.yml)
   - https://github.com/CDLUC3/mrt-doc/blob/main/sampleFiles/bigHunt.checkm
-- [call 911](manifest.call911.yml)
+- [manifest.call911.yml](manifest.call911.yml)
   - https://github.com/CDLUC3/mrt-doc/blob/main/sampleFiles/call911.checkm
-- [manifest files](manifest.files.yml)
+- [manifest.files.yml](manifest.files.yml)
   - https://github.com/CDLUC3/mrt-doc/blob/main/sampleFiles/sampleBatchOfFiles.checkm
-- [manifest batch](manifest.batch.yml)
+- [manifest.batch.yml](manifest.batch.yml)
   - https://github.com/CDLUC3/mrt-doc/blob/main/sampleFiles/sampleBatchOfManifests.checkm
 
 ## Execution
