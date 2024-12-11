@@ -1,0 +1,35 @@
+authentication-methods:
+  - id: default-auth
+    default: true
+    method:
+      public:
+contents:
+  objects:
+    - primary-id: ark:/99999/fk4
+      local-id: 1
+      erc-who: "Terry Brady"
+      erc-what: "Test manifest"
+      erc-when: "2021-09-01"
+      files:
+        - url: https://example.com/manifest1.yml
+          merritt-pathname: manifest1.yml
+          size: 12345
+          mime: application/yaml
+          fixity:
+            algorithm: sha256
+            value: 1234567890abcdef
+          authentication-method-id: default-auth
+    - primary-id: ark:/99999/fk4
+      local-id: 2
+      erc-who: "Terry Brady"
+      erc-what: "Test manifest"
+      erc-when: "2021-09-01"
+      files:
+        - url: https://example.com/manifest2.yml
+          merritt-pathname: manifest2.yml
+          size: 12345
+          mime: application/yaml
+          fixity:
+            algorithm: sha256
+            value: 1234567890abcdef
+          authentication-method-id: default-auth

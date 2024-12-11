@@ -1,0 +1,17 @@
+authentication-methods:
+  - id: default-auth
+    default: true
+    method:
+      public:
+contents:
+  metadata-replacements:
+    - primary-id: ark:/99999/fk4
+      local-id: 1
+      erc-who: "Terry Brady"
+      erc-what: "Test manifest"
+      erc-when: "2021-09-01"
+    - primary-id: ark:/99999/fk4
+      local-id: 2
+      erc-who: "Terry Brady"
+      erc-what: "Test manifest"
+      erc-when: "2021-09-01"
