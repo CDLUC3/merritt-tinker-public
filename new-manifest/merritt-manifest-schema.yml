@@ -1,0 +1,209 @@
+"$id": https://merritt.cdlib.org/merritt-manifest-v2
+title: Merritt Manifest V2
+type: object
+additionalProperties: false
+required:
+- authentication-methods
+- contents
+properties:
+  authentication-methods:
+    type: array
+    items: 
+      type: object
+      required:
+      - id
+      - default
+      - method
+      additionalProperties: false
+      properties:
+        id:
+          type: string
+        default:
+          type: boolean
+        method:
+          type: object
+          oneOf:
+          - type: object
+            required:
+            - public
+            additionalProperties: false
+            properties:
+              public:
+                type: 'null'
+          - type: object
+            required:
+            - basic
+            additionalProperties: false
+            properties:
+              basic:
+                type: object
+                required:
+                - user
+                - password
+                additionalProperties: false
+                properties:
+                  user:
+                    type: string
+                  password:
+                    type: string
+          - type: object
+            required:
+            - api-key
+            additionalProperties: false
+            properties:        
+              api-key:
+                type: object
+                required:
+                - header
+                - value
+                additionalProperties: false
+                properties:
+                  header:
+                    type: string
+                  value:
+                    type: string
+          - type: object
+            required:
+            - api-gw
+            additionalProperties: false
+            properties:
+              api-gw:
+                type: object
+                required:
+                - header
+                - value
+                additionalProperties: false
+                properties:
+                  header:
+                    type: string
+                  value:
+                    type: string
+          - type: object
+            required:
+            - aws-enabled
+            additionalProperties: false
+            properties:        
+              aws-enabled:
+                type: boolean
+  contents:
+    type: object
+    oneOf:
+    - type: object
+      required:
+      - batch-manifests
+      properties:
+        batch-manifests:
+          type: array
+          items: &manifestitem
+            type: object
+          required:
+          - url
+          additionalProperties: false
+          properties:
+            url:
+              type: string
+            size:
+              type: number
+            mime:
+              type: string
+            fixity:
+              type: object
+              required:
+              - algorithm
+              - value
+              additionalProperties: false
+              properties:
+                algorithm:
+                  type: string
+                value:
+                  type: string
+            authentication-method-id:
+              type: string
+    - type: object
+      required:
+      - containers
+      properties:
+        containers:
+          type: array
+          items: 
+            type: object
+            <<: *manifestitem
+    - type: object
+      required:
+      - objects
+      properties:
+        objects:
+          type: array
+          items: 
+            type: object
+            required:
+            - files
+            additionalProperties: false
+            properties:
+              primary-id:
+                type: string
+              local-id:
+                type: array
+                items: 
+                  type: string
+              erc-who:
+                type: string
+              erc-what:
+                type: string
+              erc-when:
+                type: string
+              files:
+                type: array
+                items: 
+                  type: object
+                  required:
+                  - url
+                  additionalProperties: false
+                  properties:
+                    url:
+                      type: string
+                    merritt-pathname:
+                      type: string
+                    size:
+                      type: number
+                    mime:
+                      type: string
+                    fixity:
+                      type: object
+                      required:
+                      - algorithm
+                      - value
+                      additionalProperties: false
+                      properties:
+                        algorithm:
+                          type: string
+                        value:
+                          type: string
+                    authentication-method-id:
+                      type: string
+    - type: object
+      required:
+      - metadata-replacements
+      properties:
+        metadata-replacements:
+          type: array
+          items: 
+            type: object
+            oneOf:
+            - required:
+              - primary-id
+            - required:
+              - local-id
+            properties:
+              primary-id:
+                type: string
+              local-id:
+                type: array
+                items: 
+                  type: string
+              erc-who:
+                type: string
+              erc-what:
+                type: string
+              erc-when:
+                type: string

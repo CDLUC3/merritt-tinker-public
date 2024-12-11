@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "manifest.json"
+            ],
+            "url": "./new-manifest/merritt-manifest-schema.json"
+        }
+    ],
+    "yaml.schemas": {
+        "./new-manifest/merritt-manifest-schema.json": [
+            "manifest*.yml"
+        ]
+    },
+    "json.maxItemsComputed": 500000
+}
