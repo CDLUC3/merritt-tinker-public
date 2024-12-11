@@ -1,0 +1,49 @@
+authentication-methods:
+  - id: default-auth
+    default: true
+    method:
+      public:
+contents:
+  objects:
+  - erc-who: Tracy Seneca
+    erc-when: 2009-09-01
+    files:
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt2.jpg
+      size: 76935
+      merritt-pathname: bigHunt2.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt3.jpg
+      size: 55408
+      merritt-pathname: bigHunt3.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/bigHunt.txt
+      size: 33
+      merritt-pathname: bigHunt.txt 
+  - erc-who: Tracy Seneca
+    erc-what: Motel Capri - manifest style
+    erc-when: 2009-09-01T00:00:00
+    files:
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/4blocks.jpg
+      fixity:
+        algorithm: md5
+        value: 0b21c6d48e815dd537d42dc1cfac0111
+      merritt-pathname: 4blocks.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/4blocks.txt
+      fixity:
+        algorithm: md5
+        value: 4dbac258aa1aab9fea0f57712385283d
+      merritt-pathname: 4blocks.txt
+  - erc-who: Tracy Seneca
+    erc-what: If This Bell Rings Call 911 - manifest style
+    erc-when: 2009-09-01T00:00:00
+    files:  
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.jpg
+      size: 87112
+      fixity:
+        algorithm: md5
+        value: 47d321056e60944a06973793c7b5841e
+      merritt-pathname: call911.jpg
+    - url: https://raw.githubusercontent.com/CDLUC3/mrt-doc/main/sampleFiles/call911.txt
+      size: 46
+      fixity:
+        algorithm: md5
+        value: 77fe42b1055bbabe5164822823218f0a
+      merritt-pathname: call911.txt
