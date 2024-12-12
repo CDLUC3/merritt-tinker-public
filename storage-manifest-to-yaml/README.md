@@ -14,6 +14,8 @@
 - generate key list pm.txt
 - diff m.txt pm.txt
 
+Results are sorted by checksum in order to align key differences and to provide identity.  
+
 ```
 cdl-tbrady-6m:storage-manifest-to-yaml tbrady$ bundle exec ruby keys.rb provenance_manifest.xml > pm.txt
 cdl-tbrady-6m:storage-manifest-to-yaml tbrady$ bundle exec ruby keys.rb manifest.xml > m.txt
