@@ -1,3 +1,6 @@
 target/classes/org/my/Test.class
 storage-manifest-to-yaml/provenance_manifest.xml
 storage-manifest-to-yaml/provenance_manifest.yml
+storage-manifest-to-yaml/m.txt
+storage-manifest-to-yaml/manifest.xml
+storage-manifest-to-yaml/pm.txt
